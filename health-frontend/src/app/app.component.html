@@ -1,0 +1,67 @@
+<div>
+  <form [formGroup]="seguradoForm" (ngSubmit)="enviarSegurado()">
+    <div>
+      <label>Nome</label>
+      <input formControlName="nome" type="text" />
+    </div>
+    <div>
+      <label>Nascimento</label>
+      <input type="text" formControlName="nome" />
+    </div>
+    <div formGroupName="endereco">
+      <div>
+        <label>Endereço</label>
+      </div>
+      <div>
+        <label>Logradouro</label>
+        <input type="text" formControlName="logradouro"/>
+      </div>
+      <div>
+        <label>Bairro</label>
+        <input type="text" formControlName="bairro"/>
+      </div>
+      <div>
+        <label>CEP</label>
+        <input type="text" formControlName="cep"/>
+      </div>
+      <div>
+        <label>Cidade</label>
+        <input type="text" formControlName="cidade"/>
+      </div>
+    </div>
+    <button type="submit">Solicitar Cotação</button>
+  </form>
+</div>
+
+<br /><br />
+
+<div>
+  <div>
+    <label>Premio</label>
+    <input type="text" readonly />
+  </div>
+  <div>
+    <label>Parcelas</label>
+    <input type="text" readonly />
+  </div>
+  <div>
+    <label>Valor Parcelas</label>
+    <input type="text" readonly />
+  </div>
+  <div>
+    <label>Primeiro Vencimento</label>
+    <input type="text" readonly />
+  </div>
+  <div>
+    <label>Cobertura Total</label>
+    <input type="text" readonly />
+  </div>
+  <div>
+    <label>Valido</label>
+    <input type="text" readonly />
+  </div>
+  <div>
+    <label>Validações</label>
+    <textarea type="text" readonly></textarea>
+  </div>
+</div>
